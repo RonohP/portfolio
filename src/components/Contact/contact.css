@@ -1,0 +1,60 @@
+.contact {
+  background-color: #1a1a1a;
+}
+
+.contact .title::after {
+  content: 'get in touch';
+  background-color: #1a1a1a;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+  margin: 5px;
+}
+
+.contact .contact-content .text {
+  font-size: 30px;
+  font-weight: 600;
+  color: #f7f8fb;
+  margin-bottom: 30px;
+}
+
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .row .font-awe {
+  font-size: 25px;
+  color: #dd8888;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 500;
+  color: #f7f8fb;
+}
+
+.contact .contact-content .row .info .sub-title {
+  color: #a6a5a4;
+}
+
+.contact .contact-content .right a{
+  color: #dd8888;
+  display: inline-block;
+  margin-right: 20px;
+  transition: transform 0.3s;
+  font-size: 30px;
+}
+
+.contact .contact-content .right a:hover {
+  transform: scale(1.6);
+}

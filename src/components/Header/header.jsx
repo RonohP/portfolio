@@ -1,37 +1,22 @@
 import React from 'react';
-import '../Header/header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithub,
-  faLinkedin
-} from '@fortawesome/free-brands-svg-icons';
+import './header.css';
+import '../../App.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFacebook, faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import diving from '../../diving.svg';
+import Navbar from './Navbar/navbar';
+import ScrollToTop from './Scroll/scrollToTop';
+
+
 function Header() {
 
   return (
     <header className='hero'>
-      <nav>
-        <h2 className='logo'>
-          Port<span>folio</span>
-        </h2>
-        <ul>
-          <li>
-            <a href='#about'>About Me</a>
-          </li>
-          <li>
-            <a href='#skills'>Skills</a>
-          </li>
-          <li>
-            <a href='#project'>Projects</a>
-          </li>
-          <li>
-            <a href='#contact'>Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-      <div id='container'>
-        <img className='diving' src={diving} alt='diving' />
-      </div>
+      <ScrollToTop />
+
+      <Navbar />
+
+      <img className='diving' src={diving} alt='diving' />
       <div className='hero-text'>
         <h4>Hello, my name is</h4>
         <h1>
@@ -48,7 +33,7 @@ function Header() {
         </a>
       </div>
 
-      <div className='share'>
+      {/* <div className='share'>
         <p>Let's Connect</p>
         <div className='social'>
           <a
@@ -65,8 +50,29 @@ function Header() {
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-        </div>
-      </div>
+          <a
+            href='https://www.instagram.com/purity_rono/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            href='https://web.facebook.com/purity.jel/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a
+            href='https://twitter.com/jelimo_rono'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+        </div> 
+      </div>*/}
     </header>
   );
 }

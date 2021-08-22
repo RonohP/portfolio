@@ -1,0 +1,53 @@
+.skills{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../image/black.jpg");
+}
+
+.skills .title::before{
+    background: #ffc4b2;
+}
+
+.skills .title::after{
+    background: url('../../image/black.jpg');
+    text-transform: none;
+    color: #ffc4b2;
+    content: 'what i know';
+}
+
+/* .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+} */
+
+.skills .skills-content .card{
+    width: calc(33% - 20px);
+    background: #1A1A1A;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .card h5{
+    color: #F7F8FB;
+    font-size: 25px;
+    margin: 10px 0 7px;
+    margin-bottom: 15px;
+
+}
+
+.skills .skills-content{
+    align-items: stretch;
+}
+
+.para ul li{
+    color: #FFC4B2;
+    font-size: 14px;
+    margin: 5px 0;
+    border-bottom: .7px solid #a6a5a4;
+    padding: 15px 0;
+    list-style-type: none;
+}

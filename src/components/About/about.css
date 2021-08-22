@@ -1,0 +1,100 @@
+.about {
+  background-color: #1a1a1a;
+}
+
+.about .title::after {
+  content: 'who i am';
+  background-color: #1a1a1a;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .right{
+  width: 55%;
+}
+
+.photo {
+  display: block;
+  position: relative;
+}
+
+.about .about-content .photo img {
+  height: 550px;
+  width: 400px;
+  object-fit: cover;
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  filter: grayscale(1) opacity(.8);
+  border-radius: 6px;
+}
+
+.column.left.photo.photo:hover img {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+  filter: grayscale(0) opacity(1);
+}
+
+.photo .glow-wrap {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+.photo .glow {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow {
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+}
+
+.about-text p{
+  text-align: justify;
+}
+
+.about-content {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h5 {
+  color: #f7f8fb;
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.about-text p {
+  color: #ffc4b2;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.about-text p a{
+  text-decoration: none;
+  color: #f7f8fb;
+}
