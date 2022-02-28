@@ -45,7 +45,7 @@ function Skills() {
                   color: '#DD8888',
                 }}
               />
-              <h5>Frameworks</h5>
+              <h5>Frameworks/ Libraries</h5>
               <div className='para'>
                 <ul>
                   <li>ReactJS</li>
